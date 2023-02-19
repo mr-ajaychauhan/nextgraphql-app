@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
+import ActiveChannels from '@/components/ActiveChannels'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,7 +17,7 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <div className={styles.description}>
-          <p style={{display:'none'}}>
+          <p style={{ display: 'none' }}>
             Get started by editing&nbsp;
             <code className={styles.code}></code>
           </p>
@@ -37,7 +38,7 @@ export default function Home() {
         </div>
 
         <div className={styles.grid}>
-
+          <ActiveChannels />
         </div>
       </main>
     </>
